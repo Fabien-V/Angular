@@ -5,12 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { DisplayGuestsDirective } from './display-guests.directive';
+import { HighLightDirective } from './highlight.directive';
+import { FirstelementDirective } from './firstelement.directive';
+import { ShowlistDirective } from './showlist.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    DisplayGuestsDirective,
+    HighLightDirective,
+    FirstelementDirective,
+    ShowlistDirective
   ],
   imports: [
     BrowserModule,
@@ -21,4 +29,4 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 

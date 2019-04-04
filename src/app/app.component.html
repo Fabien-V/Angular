@@ -18,6 +18,45 @@
   </li>
 </ul>
 
+
+
+<ul>
+  <li>Pommes de terre</li>
+  <li [ngStyle]="{backgroundColor: isThisIngredientVital ? 'red' : 'yellow'}">Raclette</li>
+  <li>Jambon</li>
+  <li [ngClass]="{'vital': isThisIngredientVital}">Cornichons</li>
+  <li>Chou-fleur</li>
+</ul>
+
+
+ <ng-template [appDisplayGuests]="displayGuestList">
+ <ul>
+  <li>Monica</li>
+  <li>Chandler</li>
+  <li>Joey</li>
+  <li>Rachel</li>
+</ul>
+ </ng-template>
+
+ <hr>
+
+ <ul *ngFor="let song of songList">
+  <li>{{ song }}</li>
+ </ul>
+
+ <h1 appHighLight>Raclette</h1>
+
+
+<hr>
+
+ <ul *ngIf="showlist">
+  <li [ngClass] appFirstelement  ="{'firstmovie' : firstMovieList}">Will Hunting</li>
+  <li>Lord of the Rings</li>
+  <li>Into the Wild</li>
+  <li>Usual Suspect</li>
+</ul>
+
+
 <sign-up></sign-up>
 <user-profile></user-profile>
 

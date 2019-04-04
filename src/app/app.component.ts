@@ -6,7 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Fabien website !';
+  title = 'Raclette party';
+
+
+  isThisIngredientVital:boolean = true;
+
+  displayGuestList:boolean=true;
+
+  firstMovieList:boolean=true;
+
+  showlist:boolean=true;
+
+ 
+
+  songList:string[] = ["Alejandro", "Ne me quitte pas", "Le temps est bon"];
 }
 
 
