@@ -16,7 +16,6 @@ export class ShowlistDirective {
 
   }
 
-
   constructor(private tplRef: TemplateRef<any>, private vwRef:ViewContainerRef) { }
 
 }
