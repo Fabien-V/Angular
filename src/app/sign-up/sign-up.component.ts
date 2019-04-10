@@ -6,10 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
-  email = "fabien.vauclin@outlook.fr";
+  email = 'fabien.vauclin@outlook.fr';
   constructor() { }
-
   ngOnInit() {
+    
   }
 
 }
