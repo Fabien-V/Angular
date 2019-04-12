@@ -9,7 +9,6 @@ export class SignUpComponent implements OnInit {
   email = 'fabien.vauclin@outlook.fr';
   constructor() { }
   ngOnInit() {
-    
   }
 
 }
