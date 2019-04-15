@@ -1,9 +1,36 @@
-<p>
-  sign-up works!
-</p>
+<!--<h1>Enter your e-mail</h1><input [(ngModel)]="email" type="email" name="email" />
+<p> {{ email }}</p> -->
 
-<h1>Enter your e-mail</h1><input [(ngModel)]="email" type="email" name="email" />
-<p> {{ email }}</p>
 
+<form  (ngSubmit)="myForm.valid && onSubmit()" #myForm="ngForm">
+
+
+  <div>
+    <label for="user-order">User</label>
+    <input name="user-order" type="text" [(ngModel)]="model.user" #user="ngModel"  required minlength="5" maxlength="25"  >
+  </div>
+
+  <div *ngIf="myForm.submitted">
+  <div *ngIf="user.errors">
+    <span *ngIf="user.errors.required">Le champ est requis</span>
+    <span *ngIf="user.errors.minlength">Le champ user ne doit pas être inférieur à 4 caractères</span>
+    <span *ngIf="user.errors.maxlength">Le champ user ne doit pas dépasser 25 caractères</span>
+  </div>
+  </div>
+
+
+  <div>
+    <label for="mail-order">Email</label>
+    <input name="mail-order" type="email"  [(ngModel)]="model.mail" #mail="ngModel" required email=""  />
+  </div>
+
+  <div *ngIf="myForm.submitted">
+    <div *ngIf="mail.errors">
+      <span *ngIf="mail.errors.required">Le champ email est requis.</span>
+      <span *ngIf="mail.errors.email">Le champ email est invalide.</span>
+    </div>
+  </div>
+  <button type="submit">Envoyer</button>
+</form>
 
 
