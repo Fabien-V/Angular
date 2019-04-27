@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ROUTES } from './app.routes';
 import { MenuComponent } from './menu/menu.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,7 @@ import { MenuComponent } from './menu/menu.component';
     ShowlistDirective,
     HomeComponent,
     ContactComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,4 +39,4 @@ import { MenuComponent } from './menu/menu.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { } 
+export class AppModule { }

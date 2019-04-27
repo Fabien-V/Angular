@@ -17,7 +17,6 @@ export class AppComponent {
 
   showlist:boolean=true;
 
- 
 
   songList:string[] = ["Alejandro", "Ne me quitte pas", "Le temps est bon"];
 }
