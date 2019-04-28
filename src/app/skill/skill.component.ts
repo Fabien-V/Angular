@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Skill } from '../common/skill.model';
 
 @Component({
   selector: 'app-skill',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillComponent implements OnInit {
 
+  @Input() public skill: Skill;
+
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+
+
