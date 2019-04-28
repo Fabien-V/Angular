@@ -10,4 +10,19 @@
   <li>{{developer.bio}}</li>
 </ul>
 
-<app-skill></app-skill>
+
+
+
+<app-skill *ngFor="let devSkill.skills" [skill]="devSkill"></app-skill>
+
+<!--Je ne comprends pas ce qu'il faut mettre dans le NgFor...
+
+Dans mon skill.component.html j'ai ça :
+<ul>
+  <li>{{skill.name}}</li>
+  <li>{{skill.logo}}</li>
+  <li>{{skill.site}}</li>
+</ul>
+
+COMMENT faire le lien entre les 2 ??! -->
+
