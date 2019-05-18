@@ -16,6 +16,7 @@ import { ROUTES } from './app.routes';
 import { MenuComponent } from './menu/menu.component';
 import { DeveloperComponent } from './developer/developer.component';
 import { SkillComponent } from './skill/skill.component';
+import { CocktailListComponent } from './cocktail-list/cocktail-list.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { SkillComponent } from './skill/skill.component';
     MenuComponent,
     DeveloperComponent,
     SkillComponent,
+    CocktailListComponent,
   ],
   imports: [
     BrowserModule,
